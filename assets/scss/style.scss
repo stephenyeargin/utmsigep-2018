@@ -1,0 +1,90 @@
+// Colors
+$sigepPurple: #592c5f;
+$sigepDarkerPurple: #330f39;
+$sigepRed: #e2231a;
+$sigepGold: #fdc33b;
+
+$linkColor: #772c51;
+$secondaryGray: #f2f2f2;
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600');
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Height of the footer */
+  margin-bottom: 350px;
+  background-color: $secondaryGray;
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5
+ {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
+header {
+  border-bottom: solid $sigepGold 3px;
+  margin-bottom: 3rem;
+  .navbar-dark {
+    background-color: $sigepRed;
+  }
+  img {
+    max-height: 40px;
+  }
+}
+
+a:link, a:visited, a:hover {
+  color: $linkColor;
+}
+
+a.btn-primary {
+  color: white;
+}
+
+body > footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: solid $sigepGold 3px;
+  color: white;
+  background: $sigepPurple;
+  background: linear-gradient(180deg, $sigepDarkerPurple 0%, $sigepPurple 35%); 
+  a:link, a:visited, a:hover {
+    color: $sigepGold;
+  }
+  img {
+    max-height: 75px;
+  }
+}
+
+/**
+ * Page Specific
+ */
+ .home-header {
+   margin-top: -3rem;
+   background: $sigepPurple;
+   background-image: url('../images/campus-background.jpg');
+   background-position: bottom;
+   background-size: cover;
+   h1 {
+     color: $secondaryGray;
+     span {
+       color: white;
+     }
+   }
+   a {
+     color: $sigepGold;
+   }
+   .home-header-content {
+     background-color: rgba($sigepDarkerPurple, 0.5);
+   }
+ }
+
+.home-officers {
+  font-size: 90%;
+}
