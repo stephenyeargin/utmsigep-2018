@@ -1,26 +1,38 @@
-'use strict';
- 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var cleanCSS = require('gulp-clean-css');
-var rename = require('gulp-rename');
-var concat = require('gulp-concat');
+var gulp = require('gulp')
+var sass = require('gulp-sass')
+var concat = require('gulp-concat')
+var rename = require('gulp-rename')
+var cleanCSS = require('gulp-clean-css')
 
-gulp.task('sass', function () {
-  return gulp.src('./assets/scss/**/*.scss')
+var paths = {
+  styles: {
+    src: 'assets/scss/**/*.scss',
+    dest: 'assets/css/'
+  }
+}
+
+function styles () {
+  return gulp.src(paths.styles.src)
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.css'))
-    .pipe(gulp.dest('./assets/css'))
+    .pipe(gulp.dest(paths.styles.dest))
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('./assets/css'))
-});
+    .pipe(rename({
+      basename: 'style',
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest(paths.styles.dest))
+}
 
-gulp.task('sass:watch', function () {
-  gulp.watch('./assets/scss/**/*.scss', ['sass']);
-});
+function watch () {
+  gulp.watch(paths.styles.src, styles)
+}
 
-gulp.task('default', [
-  'sass',
-  'sass:watch'
-]);
+exports.styles = styles
+exports.watch = watch
+
+var build = gulp.series(styles)
+
+gulp.task('build', build)
+
+gulp.task('default', watch)
