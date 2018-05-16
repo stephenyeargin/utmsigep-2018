@@ -6,14 +6,17 @@ This is a theme for the Sigma Phi Epsilon chapter at the University of Tennessee
 
 ### Requirements
 
-- NodeJS >= v10 / NPM >= v6
+- NodeJS / NPM
 
 ```bash
-# Install depedencies
+# Install Gulp
+$ npm i -g gulp-cli
+
+# Install dependencies
 $ npm install
 
-# Compile the SCSS
-$ gulp sass
+# Compile the assets
+$ gulp build
 
 # Watch for changed assets
 $ gulp
