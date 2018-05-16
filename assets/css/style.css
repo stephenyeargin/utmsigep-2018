@@ -35,6 +35,14 @@ body > footer {
   color: white;
   background: #592c5f;
   background: linear-gradient(180deg, #330f39 0%, #592c5f 35%); }
+  body > footer .footer-navigation-menu ul {
+    padding-left: 0;
+    list-style: none; }
+    body > footer .footer-navigation-menu ul li {
+      display: inline-block;
+      margin-right: .5rem; }
+      body > footer .footer-navigation-menu ul li:last-child {
+        margin-right: 0; }
   body > footer a:link, body > footer a:visited, body > footer a:hover {
     color: #fdc33b; }
   body > footer img {

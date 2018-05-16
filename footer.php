@@ -4,14 +4,11 @@
       <a href="{% link index.html %}"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sigep-logo-inverse.svg" class="img-fluid" /></a>
     </div>
 
+    <div class="footer-navigation-menu">
     <?php wp_nav_menu([
-      'theme_location'  => 'footer_site_navigation',
-      'depth'	          => 1, // 1 = no dropdowns, 2 = with dropdowns.
-      'container'       => false,
-      'menu_class'      => 'nav m-auto',
-      'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-      'walker'          => new WP_Bootstrap_Navwalker(),
+      'menu' => 'footer_site_navigation',
     ]); ?>
+    </div>
 
     <ul class="list-inline">
       <li class="list-inline-item"><a href="https://twitter.com/utmsigep"><i class="fab fa-twitter"></i></a></li>

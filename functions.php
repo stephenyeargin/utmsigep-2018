@@ -39,20 +39,48 @@ function utmsigep_theme_features()
   add_theme_support('html5', ['search-form', 'comment-form', 'comment-list', 'gallery', 'caption']);
 
   // Add theme support for document Title tag
-  add_theme_support( 'title-tag' );
+  add_theme_support('title-tag');
+  
+  // Add theme support for widgets
+  add_theme_support('widgets');
 }
 add_action('after_setup_theme', 'utmsigep_theme_features');
 
 /**
+ * Site Sidebars
+ */
+function utmsigep_sidebars()
+{
+  register_sidebar([
+    'name' => 'Home Page Content',
+    'id' => 'home-page-content',
+    'class' => '',
+    'before_widget' => '<div id="%1$s" class="widget card %2$s">',
+    'after_widget' => '</div>' . PHP_EOL,
+    'before_title' => '<!-- Widget: ',
+    'after_title' => '-->'
+  ]);
+
+  register_sidebar([
+    'name' => 'Page Sidebar',
+    'id' => 'page-sidebar',
+    'class' => '',
+    'before_widget' => '<div id="%1$s" class="widget card mb-3 %2$s"><div class="card-body">',
+    'after_widget' => '</div></div>',
+    'before_title' => '<h2 class="card-title">',
+    'after_title' => '</h2>'
+  ]);
+}
+add_action('after_setup_theme', 'utmsigep_sidebars');
+
+/**
  * Site Menus
  */
- // Register Navigation Menus
 function utmsigep_navigation_menus()
 {
   $locations = [
-    'main_site_navigation' => __('Pages linked in header of the site.', 'text_domain'),
-    'footer_site_navigation' => __('Pages linked in footer of the site.', 'text_domain'),
-    'social_media_links' => __('Links to various social media properties', 'text_domain'),
+    'main_site_navigation' => __('Pages linked in header of the site.', 'utmsigep'),
+    'footer_site_navigation' => __('Pages linked in footer of the site.', 'utmsigep')
   ];
   register_nav_menus($locations);
 }
