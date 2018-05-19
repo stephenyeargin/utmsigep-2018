@@ -1,3 +1,4 @@
-node_modules
+.whiskey_disk_git_changes
 *.log
 assets/dist/*
+node_modules
