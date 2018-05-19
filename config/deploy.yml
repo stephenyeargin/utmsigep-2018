@@ -1,0 +1,5 @@
+staging:
+  domain: "deploy@sigeptnkappa.org"
+  deploy_to: "/sites/sigep_wp_dev/wp-content/themes/utmsigep-2018"
+  repository: "https://github.com/utmsigep/utmsigep-2018.git"
+  branch: "master"
