@@ -1,9 +1,3 @@
-<?php
-/**
- * Template Name: Home Page
- */
-?>
-
 <html lang="en">
   <head>
     <?php require_once(get_template_directory() . '/includes/meta.php'); ?>
