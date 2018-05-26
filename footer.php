@@ -16,7 +16,7 @@
       <li class="list-inline-item"><a href="https://www.instagram.com/utm_sigep/"><i class="fab fa-instagram"></i></a></li>
       <li class="list-inline-item">|</li>
       <li class="list-inline-item"><a href="http://sigep.org">SigEp.org</i></a></li>
-      <li class="list-inline-item"><a href="http://www.utm.edu">UT Martin</a></li>
+      <li class="list-inline-item"><a href="https://www.utm.edu">UT Martin</a></li>
     </ul>
     <p class="small">
       All Content &copy; Tennessee Kappa Chapter of Sigma Phi Epsilon at The University of Tennessee at Martin
