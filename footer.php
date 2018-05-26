@@ -1,7 +1,7 @@
 <footer class="mt-5">
   <div class="container text-center clearfix">
     <div class="p-3">
-      <a href="{% link index.html %}"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sigep-logo-inverse.svg" class="img-fluid" /></a>
+      <a href="/" title="Return to Home Page"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sigep-logo-inverse.svg" class="img-fluid" alt="Sigma Phi Epsilon (SigEp)" /></a>
     </div>
 
     <div class="footer-navigation-menu">
