@@ -14,9 +14,9 @@
             The University of Tennessee at Martin.
           </h1>
           <ul class="list-inline display-2 pt-5 pb-5">
-            <li class="list-inline-item"><a href="https://twitter.com/utmsigep"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.facebook.com/sigeptnkappa/"><i class="fab fa-facebook"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com/utm_sigep/"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/utmsigep" title="SigEp at UT Martin on Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/sigeptnkappa/" title="SigEp at UT Martin on Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/utm_sigep/" title="SigEp at UT Martin on Instagram"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
       </div>
