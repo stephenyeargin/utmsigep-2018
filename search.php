@@ -1,6 +1,6 @@
-<?php
+<?php 
 /**
- * Template Name: Default Post Layout (2-column)
+ * Template Name: Search Results
  */
 ?>
 <!doctype html>
@@ -15,20 +15,14 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
+          <h2>Search Results</h2>
           <?php if (have_posts()):  while (have_posts()): the_post(); ?>
-          <div class="card">
+          <div class="card mb-2">
             <div class="card-body">
-              <div class="post-title"><?php the_title('<h2 class="mb-4">', '</h2>'); ?></div>
+              <div class="post-title"><a href="<?php echo the_permalink(); ?>"><?php the_title('<h4 class="">', '</h4>'); ?></a></div>
               <div class="post-content">
-                <?php the_content(); ?>
-              </div>
-              <div class="post-footer text-muted small">
-                <hr />
-                <ul class="list-inline">
-                  <li class="list-inline-item"><span class="fa fa-user"></span> <?php the_author(); ?></li>
-                  <li class="list-inline-item"><span class="fa fa-calendar"></span> <?php the_date(); ?></li>
-                  <li class="list-inline-item"><?php the_tags('<span class="fa fa-tag"></span> '); ?></li>
-                </ul>
+                <p><a href="<?php echo the_permalink(); ?>"><?php echo the_permalink(); ?></a></p>
+                <?php the_excerpt(); ?>
               </div>
             </div>
           </div>
@@ -38,6 +32,7 @@
           <p>No posts found.</p>
           <?php endif; ?>
         </div>
+
         <div class="col-md-4">
           <?php get_sidebar(); ?>
         </div>
