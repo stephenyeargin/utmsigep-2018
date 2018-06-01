@@ -21,3 +21,21 @@ $ gulp build
 # Watch for changed assets
 $ gulp
 ```
+
+## Deployment
+
+### Requirements
+
+- [whiskey_disk](https://github.com/flogic/whiskey_disk)
+
+Staging/Development
+
+```bash
+$ wd deploy --to=staging
+```
+
+Production
+
+```bash
+$ wd deploy --to=production
+```

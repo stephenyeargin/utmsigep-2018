@@ -3,3 +3,9 @@ production:
   deploy_to: "/sites/sigep_wp/wp-content/themes/utmsigep-wp-theme"
   repository: "https://github.com/utmsigep/utmsigep-wp-theme.git"
   branch: "master"
+
+development:
+  domain: "deploy@sigeptnkappa.org"
+  deploy_to: "/sites/sigep_wp_dev/wp-content/themes/utmsigep-wp-theme"
+  repository: "https://github.com/utmsigep/utmsigep-wp-theme.git"
+  branch: "master"
