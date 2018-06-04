@@ -15,7 +15,7 @@
       <li class="list-inline-item"><a href="https://www.facebook.com/sigeptnkappa/" title="SigEp at UT Martin on Facebook"><i class="fab fa-facebook"></i></a></li>
       <li class="list-inline-item"><a href="https://www.instagram.com/utm_sigep/" title="SigEp at UT Martin on Instagram"><i class="fab fa-instagram"></i></a></li>
       <li class="list-inline-item">|</li>
-      <li class="list-inline-item"><a href="http://sigep.org">SigEp.org</i></a></li>
+      <li class="list-inline-item"><a href="http://sigep.org">SigEp.org</a></li>
       <li class="list-inline-item"><a href="https://www.utm.edu">UT Martin</a></li>
     </ul>
     <p class="small">

@@ -4,7 +4,7 @@
       <a class="navbar-brand" href="/" title="Return to Home Page">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sigep-logo-inverse.svg" class="d-inline-block align-top" alt="Sigma Phi Epsilon (SigEp)">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header_nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header_nav" aria-controls="header_nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <?php wp_nav_menu([

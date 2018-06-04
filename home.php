@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
   <head>
     <?php require_once(get_template_directory() . '/includes/meta.php'); ?>
