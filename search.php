@@ -5,7 +5,7 @@
 ?>
 <!doctype html>
 <html lang="en">
-  <head>
+  <head itemscope itemtype="http://schema.org/WebPage">
     <?php require_once(get_template_directory() . '/includes/meta.php'); ?>
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/style.css" />
     <?php wp_head(); ?>

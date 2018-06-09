@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head itemscope itemtype="http://schema.org/WebPage">
     <?php require_once(get_template_directory() . '/includes/meta.php'); ?>
     <?php wp_head(); ?>
   </head>
