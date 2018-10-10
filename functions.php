@@ -19,7 +19,7 @@ add_action('wp_enqueue_scripts', 'utmsigep_enqueue_scripts');
  */
 function utmsigep_enqueue_styles()
 {
-  wp_enqueue_style('bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.min.css', [], '4.1.0');
+  wp_enqueue_style('bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css', [], '4.1.0');
   wp_enqueue_style('utmsigep', get_stylesheet_directory_uri() . '/assets/css/style.css', ['bootstrap']);
 }
 add_action('wp_enqueue_scripts', 'utmsigep_enqueue_styles');
