@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,600");
+@import url("https://fonts.googleapis.com/css?family=Istok+Web|Playfair+Display&display=swap");
 html {
   position: relative;
   min-height: 100%; }
@@ -6,11 +6,12 @@ html {
 body {
   /* Height of the footer */
   margin-bottom: 350px;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  font-family: 'Istok Web', sans-serif; }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 600; }
 
 header {
@@ -20,12 +21,17 @@ header {
     background-color: #e2231a; }
   header img {
     max-height: 40px; }
+  header a:link, header a:visited, header a:hover {
+    text-decoration: none; }
 
 a:link, a:visited, a:hover {
-  color: #772c51; }
+  text-decoration: underline; }
+
+a.btn {
+  text-decoration: none; }
 
 a.btn-primary {
-  color: white; }
+  background-color: #592c5f; }
 
 body > footer {
   position: absolute;
@@ -44,7 +50,8 @@ body > footer {
       body > footer .footer-navigation-menu ul li:last-child {
         margin-right: 0; }
   body > footer a:link, body > footer a:visited, body > footer a:hover {
-    color: #fdc33b; }
+    color: #fdc33b;
+    text-decoration: none; }
   body > footer img {
     max-height: 75px; }
 

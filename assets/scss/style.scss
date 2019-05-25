@@ -7,7 +7,7 @@ $sigepGold: #fdc33b;
 $linkColor: #772c51;
 $secondaryGray: #f2f2f2;
 
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,600');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web|Playfair+Display&display=swap');
 
 html {
   position: relative;
@@ -18,12 +18,13 @@ body {
   /* Height of the footer */
   margin-bottom: 350px;
   background-color: $secondaryGray;
+  font-family: 'Istok Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5
  {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
 }
 
@@ -36,14 +37,21 @@ header {
   img {
     max-height: 40px;
   }
+  a:link, a:visited, a:hover {
+    text-decoration: none;
+  }
 }
 
 a:link, a:visited, a:hover {
-  color: $linkColor;
+  text-decoration: underline;
+}
+
+a.btn {
+  text-decoration: none;
 }
 
 a.btn-primary {
-  color: white;
+  background-color: $sigepPurple;
 }
 
 body > footer {
@@ -69,6 +77,7 @@ body > footer {
   }
   a:link, a:visited, a:hover {
     color: $sigepGold;
+    text-decoration: none;
   }
   img {
     max-height: 75px;
