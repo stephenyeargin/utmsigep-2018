@@ -16,9 +16,12 @@
       <div class="row">
         <div class="col-md-8">
           <div class="card">
+            <div class="img-top text-center">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/balanced-man-cat-in-the-hat.png" class="w-50 m-4 img-fluid" alt="Cat in the Hat Balanced Man" />
+            </div>
             <div class="card-body">
               <h2 class="card-title">Error 404</h2>
-              <p class="card-text lead">We cannot seem to locate the page you were looking for. It may have moved to another URL (and we didn't redirect you correctly) or it was deleted (and there isn't a replacement). <em>Either way, we let you down. Sorry about that.</em></p>
+              <p class="card-text lead">We looked over here, we looked over there! But we couldn't find your content anywhere!</p>
               <p class="card-text lead">Use the search form below to keep looking.</p>
               <?php get_search_form(); ?>
             </div>
