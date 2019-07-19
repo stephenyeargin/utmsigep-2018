@@ -7,7 +7,11 @@
 <html lang="en">
   <head>
     <?php require_once(get_template_directory() . '/includes/meta.php'); ?>
+    <title>404 - Not Found</title>
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Chewy&display=swap" rel="stylesheet"> 
+    <style>
+    .lead-404 { font-family: 'Chewy', cursive; font-size: 2em; margin-bottom: 2em; margin-top: 2em; }
     <?php wp_head(); ?>
   </head>
   <body>
@@ -19,9 +23,13 @@
             <div class="img-top text-center">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/balanced-man-cat-in-the-hat.png" class="w-50 m-4 img-fluid" alt="Cat in the Hat Balanced Man" />
             </div>
-            <div class="card-body">
+            <div class="card-body text-center">
               <h2 class="card-title">Error 404</h2>
-              <p class="card-text lead">We looked over here, we looked over there! But we couldn't find your content anywhere!</p>
+              <hr />
+              <p class="card-text lead-404 text-left">We looked over here!</p>
+              <p class="card-text lead-404 text-right">We looked over there!</p>
+              <p class="card-text lead-404">But we couldn't find your content anywhere!</p>
+              <hr />
               <p class="card-text lead">Use the search form below to keep looking.</p>
               <?php get_search_form(); ?>
             </div>
