@@ -6,6 +6,7 @@
       $childpages = wp_list_pages('sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0');
   }
 
+  $string = '';
   if ($childpages) {
       $string = '<div class="card mb-4"><div class="card-body"><h4>More</h4><ul class="nav flex-column">' . $childpages . '</ul></div></div>';
   }
