@@ -11,6 +11,7 @@
     </div>
 
     <ul class="list-inline">
+      <li class="list-inline-item"><a href="https://www.linkedin.com/company/tennessee-kappa-avc/" title="SigEp at UT Martin on LinkedIn"><i class="fab fa-linkedin"></i></a></li>
       <li class="list-inline-item"><a href="https://twitter.com/utmsigep" title="SigEp at UT Martin on Twitter"><i class="fab fa-twitter"></i></a></li>
       <li class="list-inline-item"><a href="https://www.facebook.com/utmsigep/" title="SigEp at UT Martin on Facebook"><i class="fab fa-facebook"></i></a></li>
       <li class="list-inline-item"><a href="https://www.instagram.com/utm_sigep/" title="SigEp at UT Martin on Instagram"><i class="fab fa-instagram"></i></a></li>
@@ -19,7 +20,7 @@
       <li class="list-inline-item"><a href="https://www.utm.edu">UT Martin</a></li>
     </ul>
     <p class="small">
-      All Content &copy; Tennessee Kappa Chapter of Sigma Phi Epsilon at the University of Tennessee at Martin
+      All Content &copy; Tennessee Kappa Alumni &amp; Volunteer Corporation
     </p>
     <br />
   </div>
