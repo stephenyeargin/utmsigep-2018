@@ -7,7 +7,7 @@ $sigepGold: #fdc33b;
 $linkColor: #772c51;
 $secondaryGray: #f2f2f2;
 
-@import url('https://fonts.googleapis.com/css?family=Istok+Web|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 html {
   position: relative;
@@ -111,6 +111,19 @@ body > footer {
   font-size: 0.9rem;
 }
 
+.card-columns {
+  columns: 3;
+  column-gap: 1rem;
+  .card {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+}
 
+@media (max-width: 767.98px) {
+  .card-columns {
+    columns: 1;
+  }
+}
 
 @import './wp-core.scss';
